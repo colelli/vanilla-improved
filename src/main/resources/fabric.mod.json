@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vanilla-improved",
+	"version": "${version}",
+	"name": "vanilla-improved",
+	"description": "Small vanilla improving Minecraft mod to test and learn new things.",
+	"authors": [
+		"Colelli"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/colelli/vanilla-improved"
+	},
+	"license": "MIT",
+	"icon": "assets/vanilla-improved/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.colelli.vanillaimproved.Vanillaimproved"
+		],
+		"client": [
+			"net.colelli.vanillaimproved.VanillaimprovedClient"
+		],
+		"fabric-datagen": [
+			"net.colelli.vanillaimproved.VanillaimprovedDataGenerator"
+		]
+	},
+	"mixins": [
+		"vanilla-improved.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
